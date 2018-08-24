@@ -17,37 +17,14 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 public class GWTProjectone implements EntryPoint {
 
 	public void onModuleLoad() {
-		VerticalPanel vPanel = new VerticalPanel();
-		vPanel.setBorderWidth(1);
+//object erzeugen Pageone
+		PageOne page = new PageOne();
 		
-		Image img = new Image("images/ZOIlogo_Small.jpg");
-		vPanel.add(img);
-		
-		Label myLbl= new Label("All Your Base Are Belong To Us!");
-		vPanel.add(myLbl);
-		
-		HorizontalPanel hPanel = new HorizontalPanel();
-		hPanel.setBorderWidth(1);
-		
-		TextBox txt1 = new TextBox();
-		hPanel.add(txt1);
-				
-		
-		Button btn1 = new Button("Touch me Please!");
-		btn1.addClickHandler(new ClickHandler(){
-
-			@Override
-			public void onClick(ClickEvent event) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-		});
-		hPanel.add(btn1);
-		vPanel.add(hPanel);
-		
-		RootPanel.get().add(vPanel);
+		RootPanel.get().add(page);
 		
 
 	}
-}
+
+		
+	}
+
